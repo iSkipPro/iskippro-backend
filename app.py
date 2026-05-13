@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Render ke environment variables se URI uthayega
 MONGO_URI = os.environ.get("MONGO_URI")
 client = MongoClient(MONGO_URI)
-db = client.iskippro_db
+db = client.iSkipPro
 
 @app.route('/check_device', methods=['POST'])
 def check_device():
